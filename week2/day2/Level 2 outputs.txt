@@ -1,0 +1,59 @@
+# LEVEL 2 OUTPUTS
+
+---
+
+# QUESTION 1 – Employee Login Discipline & Performance Classification
+
+| emp_id | employee_name | day_type | working_hours | performance_status |
+|---|---|---|---|---|
+| 1 | Karthik | Weekday | 9.08 | Good Performer |
+| 2 | Veena | Weekday | 5.50 | Bad Performer |
+| 3 | Ravi | Weekday | 11.00 | Good Performer |
+| 4 | Anil | Weekend | 3.00 | Weekend Login |
+| 5 | Suresh | Weekend | 7.75 | Weekend Login |
+
+---
+
+# QUESTION 2 – Past 7 Days Attendance & Productivity Check
+
+| emp_id | employee_name | login_date | day_type | working_hours | productivity_status |
+|---|---|---|---|---|---|
+| 1 | KARTHIK | 2025-01-14 | Weekday | 09:00:00 | Active & Productive |
+| 2 | KARTHIK | 2025-01-13 | Weekday | 08:15:00 | Active & Productive |
+| 3 | VEENA | 2025-01-12 | Weekend | 05:00:00 | Active but Low Hours |
+| 4 | RAVI | 2025-01-10 | Weekday | 10:00:00 | Active & Productive |
+| 5 | ANIL | 2025-01-08 | Weekday | 03:00:00 | Active but Low Hours |
+
+---
+
+# QUESTION 3 – Weekend Work Abuse Detection
+
+| emp_id | employee_name | day_name | working_hours | work_status |
+|---|---|---|---|---|
+| 1 | ravi | Saturday | 12 | Weekend Overtime |
+| 2 | veena | Sunday | 3 | Suspicious Login |
+| 3 | karthik | Friday | 9 | Normal Working Day |
+| 4 | anil | Thursday | 3 | Normal Working Day |
+
+---
+
+# QUESTION 4 – Login Time Deviation & Discipline Score
+
+| emp_id | emp_name | login_hour | working_hours | weekday_name | discipline_status |
+|---|---|---|---|---|---|
+| 1 | Karthik | 8 | 9.2 | Wednesday | Disciplined |
+| 2 | Veena | 10 | 5.2 | Wednesday | Poor Discipline |
+| 3 | Ravi | 9 | 11.5 | Wednesday | Poor Discipline |
+| 4 | Anil | 11 | 2.5 | Wednesday | Late Comer |
+
+---
+
+# QUESTION 5 – Absenteeism vs Performance Correlation
+
+| emp_id | employee_name | work_date | day_type | total_hours | performance_status |
+|---|---|---|---|---|---|
+| 1 | Karthik | 2025-01-09 | Weekday | 9 | Consistent Performer |
+| 2 | Karthik | 2025-01-10 | Weekday | 8 | Consistent Performer |
+| 3 | Veena | 2025-01-05 | Weekend | 5 | Irregular Performer |
+| 4 | Ravi | 2025-01-14 | Weekday | 10 | Consistent Performer |
+| 5 | Anil | 2025-01-03 | Weekday | 3 | Irregular Performer |
