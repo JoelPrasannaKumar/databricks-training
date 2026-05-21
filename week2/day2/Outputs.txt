@@ -1,0 +1,136 @@
+# Joins Questions 1–10 Outputs
+
+## Question 1
+
+| employee_name | manager_name |
+|---|---|
+| Karthik | NULL |
+| Ajay | Karthik |
+| Vijay | Karthik |
+| Vinay | Ajay |
+| Meena | Vijay |
+| Veer | NULL |
+| Keerthi | Vinay |
+| Priya | Vinay |
+
+---
+
+## Question 2
+
+| emp_name | dept_name |
+|---|---|
+| Karthik | HR |
+| Ajay | HR |
+| Vijay | IT |
+| Vinay | IT |
+| Meena | Finance |
+| Veer | Marketing |
+| Keerthi | Sales |
+| Priya | Sales |
+
+---
+
+## Question 3
+
+| employee_name | manager_name |
+|---|---|
+| Ajay | Karthik |
+| Vijay | Karthik |
+| Vinay | Ajay |
+| Meena | Vijay |
+| Keerthi | Vinay |
+| Priya | Vinay |
+
+---
+
+## Question 4
+
+| dept_name | emp_name | total_salary |
+|---|---|---|
+| HR | Karthik | 75000 |
+| HR | Ajay | 65000 |
+| IT | Vijay | 85000 |
+| IT | Vinay | 70000 |
+| Finance | Meena | 60000 |
+| Marketing | Veer | NULL |
+| Sales | Keerthi | NULL |
+| Sales | Priya | NULL |
+
+---
+
+## Question 5
+
+| emp_name | dept_name |
+|---|---|
+| Arun | NULL |
+
+---
+
+## Question 6
+
+| emp_name | project_name |
+|---|---|
+| Karthik | Project A |
+| Ajay | Project B |
+| Vijay | Project C |
+| Vinay | Project D |
+| Meena | Project E |
+| Veer | NULL |
+| Keerthi | NULL |
+| Priya | NULL |
+
+---
+
+## Question 7
+
+| emp_name | project_name |
+|---|---|
+| Karthik | Project A |
+| Ajay | Project B |
+| Vijay | Project C |
+| Vinay | Project D |
+| Meena | Project E |
+
+---
+
+## Question 8
+
+| emp_name | project_name |
+|---|---|
+| Karthik | Project A |
+| Ajay | Project B |
+| Vijay | Project C |
+| Vinay | Project D |
+| Meena | Project E |
+| NULL | Project F |
+
+---
+
+## Question 9
+
+| emp_name | salary |
+|---|---|
+| Karthik | 75000 |
+| Ajay | 65000 |
+| Vijay | 85000 |
+| Vinay | 70000 |
+| Meena | 60000 |
+| Veer | NULL |
+| Keerthi | NULL |
+| Priya | NULL |
+
+---
+
+## Question 10
+
+| emp_name | dept_name |
+|---|---|
+| Karthik | HR |
+| Ajay | HR |
+| Vijay | IT |
+| Vinay | IT |
+| Meena | Finance |
+| Veer | Marketing |
+| Keerthi | Sales |
+| Priya | Sales |
+| Arun | NULL |
