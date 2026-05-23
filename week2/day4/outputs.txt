@@ -1,0 +1,329 @@
+# NULL FUNCTIONS – ALL OUTPUTS
+
+---
+
+# LEVEL 1
+
+## Q1 – Employees whose salary is NULL
+
+| emp_id | name | salary | bonus | manager_id |
+|---|---|---|---|---|
+| 2 | John | NULL | 5000 | 102 |
+| 4 | David | NULL | NULL | 103 |
+| 6 | Kiran | NULL | NULL | NULL |
+| 8 | Neha | NULL | 2000 | NULL |
+
+---
+
+## Q2 – Orders where discount is NOT NULL
+
+| order_id | customer_name | amount | discount | coupon_code |
+|---|---|---|---|---|
+| 102 | John | NULL | 50 | NULL |
+| 105 | Priya | 1500 | 100 | NULL |
+| 108 | Neha | NULL | 200 | DISC15 |
+
+---
+
+## Q3 – Products where category is NULL
+
+| product_id | product_name | price | category | stock |
+|---|---|---|---|---|
+| 3 | Tablet | 30000 | NULL | 5 |
+| 4 | Headphones | NULL | NULL | NULL |
+| 7 | Mouse | 500 | NULL | NULL |
+
+---
+
+## Q4 – Count employees with NULL manager_id
+
+| total_employees |
+|---|
+| 3 |
+
+---
+
+# LEVEL 2
+
+## Q1 – Replace NULL salary with 0
+
+| emp_id | name | salary |
+|---|---|---|
+| 1 | Amit | 50000 |
+| 2 | John | 0 |
+| 3 | Sara | 60000 |
+| 4 | David | 0 |
+| 5 | Priya | 45000 |
+| 6 | Kiran | 0 |
+| 7 | Ravi | 70000 |
+| 8 | Neha | 0 |
+
+---
+
+## Q2 – Replace NULL bonus with 1000
+
+| emp_id | name | bonus |
+|---|---|---|
+| 1 | Amit | 1000 |
+| 2 | John | 5000 |
+| 3 | Sara | 1000 |
+| 4 | David | 1000 |
+| 5 | Priya | 3000 |
+| 6 | Kiran | 1000 |
+| 7 | Ravi | 7000 |
+| 8 | Neha | 2000 |
+
+---
+
+## Q3 – Replace NULL amount with 500
+
+| order_id | customer_name | amount |
+|---|---|---|
+| 101 | Amit | 1000 |
+| 102 | John | 500 |
+| 103 | Sara | 2000 |
+| 104 | David | 500 |
+| 105 | Priya | 1500 |
+| 106 | Kiran | 500 |
+| 107 | Ravi | 3000 |
+| 108 | Neha | 500 |
+
+---
+
+## Q4 – Replace NULL stock with 0
+
+| product_id | product_name | stock |
+|---|---|---|
+| 1 | Laptop | 10 |
+| 2 | Phone | 0 |
+| 3 | Tablet | 5 |
+| 4 | Headphones | 0 |
+| 5 | Monitor | 0 |
+| 6 | Keyboard | 15 |
+| 7 | Mouse | 0 |
+| 8 | Printer | 3 |
+
+---
+
+# LEVEL 3
+
+## Q1 – salary → bonus
+
+| emp_id | name | earnings |
+|---|---|---|
+| 1 | Amit | 50000 |
+| 2 | John | 5000 |
+| 3 | Sara | 60000 |
+| 4 | David | NULL |
+| 5 | Priya | 45000 |
+| 6 | Kiran | NULL |
+| 7 | Ravi | 70000 |
+| 8 | Neha | 2000 |
+
+---
+
+## Q2 – salary → bonus → 0
+
+| emp_id | name | earnings |
+|---|---|---|
+| 1 | Amit | 50000 |
+| 2 | John | 5000 |
+| 3 | Sara | 60000 |
+| 4 | David | 0 |
+| 5 | Priya | 45000 |
+| 6 | Kiran | 0 |
+| 7 | Ravi | 70000 |
+| 8 | Neha | 2000 |
+
+---
+
+## Q3 – price → 1000
+
+| product_id | product_name | final_price |
+|---|---|---|
+| 1 | Laptop | 50000 |
+| 2 | Phone | 1000 |
+| 3 | Tablet | 30000 |
+| 4 | Headphones | 1000 |
+| 5 | Monitor | 20000 |
+| 6 | Keyboard | 1000 |
+| 7 | Mouse | 500 |
+| 8 | Printer | 1000 |
+
+---
+
+## Q4 – amount → discount → 0
+
+| order_id | customer_name | payment |
+|---|---|---|
+| 101 | Amit | 1000 |
+| 102 | John | 50 |
+| 103 | Sara | 2000 |
+| 104 | David | 0 |
+| 105 | Priya | 1500 |
+| 106 | Kiran | 0 |
+| 107 | Ravi | 3000 |
+| 108 | Neha | 200 |
+
+---
+
+# LEVEL 4
+
+## Q1 – salary becomes NULL if 0
+
+| emp_id | name | salary |
+|---|---|---|
+| 1 | Amit | 50000 |
+| 2 | John | NULL |
+| 3 | Sara | 60000 |
+| 4 | David | NULL |
+| 5 | Priya | 45000 |
+| 6 | Kiran | NULL |
+| 7 | Ravi | 70000 |
+| 8 | Neha | NULL |
+
+---
+
+## Q2 – discount becomes NULL if 0
+
+| order_id | customer_name | discount |
+|---|---|---|
+| 101 | Amit | NULL |
+| 102 | John | 50 |
+| 103 | Sara | NULL |
+| 104 | David | NULL |
+| 105 | Priya | 100 |
+| 106 | Kiran | NULL |
+| 107 | Ravi | NULL |
+| 108 | Neha | 200 |
+
+---
+
+## Q3 – amount / NULLIF(discount,0)
+
+| result |
+|---|
+| NULL |
+| NULL |
+| NULL |
+| NULL |
+| 15 |
+| NULL |
+| NULL |
+| NULL |
+
+---
+
+## Q4 – coupon_code becomes NULL if DISC10
+
+| order_id | customer_name | coupon_code |
+|---|---|---|
+| 101 | Amit | NULL |
+| 102 | John | NULL |
+| 103 | Sara | DISC20 |
+| 104 | David | NULL |
+| 105 | Priya | NULL |
+| 106 | Kiran | DISC5 |
+| 107 | Ravi | NULL |
+| 108 | Neha | DISC15 |
+
+---
+
+# LEVEL 5
+
+## Q1 – Total earnings
+
+| emp_id | name | total_earnings |
+|---|---|---|
+| 1 | Amit | 50000 |
+| 2 | John | 5000 |
+| 3 | Sara | 60000 |
+| 4 | David | 0 |
+| 5 | Priya | 48000 |
+| 6 | Kiran | 0 |
+| 7 | Ravi | 77000 |
+| 8 | Neha | 2000 |
+
+---
+
+## Q2 – salary and bonus both NULL
+
+| emp_id | name | salary | bonus | manager_id |
+|---|---|---|---|---|
+| 4 | David | NULL | NULL | 103 |
+| 6 | Kiran | NULL | NULL | NULL |
+
+---
+
+## Q3 – price NULL but category NOT NULL
+
+| product_id | product_name | price | category | stock |
+|---|---|---|---|---|
+| 2 | Phone | NULL | Electronics | NULL |
+| 6 | Keyboard | NULL | Accessories | 15 |
+| 8 | Printer | NULL | Electronics | 3 |
+
+---
+
+## Q4 – amount and discount both NULL
+
+| order_id | customer_name | amount | discount | coupon_code |
+|---|---|---|---|---|
+| 104 | David | NULL | NULL | NULL |
+| 106 | Kiran | NULL | NULL | DISC5 |
+
+---
+
+# LEVEL 6
+
+## Q1 – COALESCE(salary, bonus, 1000)
+
+| emp_id | name | income |
+|---|---|---|
+| 1 | Amit | 50000 |
+| 2 | John | 5000 |
+| 3 | Sara | 60000 |
+| 4 | David | 1000 |
+| 5 | Priya | 45000 |
+| 6 | Kiran | 1000 |
+| 7 | Ravi | 70000 |
+| 8 | Neha | 2000 |
+
+---
+
+## Q2 – NULLIF(discount,0)
+
+| order_id | customer_name | discount |
+|---|---|---|
+| 101 | Amit | NULL |
+| 102 | John | 50 |
+| 103 | Sara | NULL |
+| 104 | David | NULL |
+| 105 | Priya | 100 |
+| 106 | Kiran | NULL |
+| 107 | Ravi | NULL |
+| 108 | Neha | 200 |
+
+---
+
+## Q3 – Final payable amount
+
+| order_id | customer_name | final_payable |
+|---|---|---|
+| 101 | Amit | 1000 |
+| 102 | John | -50 |
+| 103 | Sara | 2000 |
+| 104 | David | 0 |
+| 105 | Priya | 1400 |
+| 106 | Kiran | 0 |
+| 107 | Ravi | 3000 |
+| 108 | Neha | -200 |
+
+---
+
+## Q4 – salary NULL but manager exists
+
+| emp_id | name | salary | bonus | manager_id |
+|---|---|---|---|---|
+| 2 | John | NULL | 5000 | 102 |
+| 4 | David | NULL | NULL | 103 |
