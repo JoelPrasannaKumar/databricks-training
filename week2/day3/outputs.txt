@@ -1,0 +1,271 @@
+# QUESTION 11
+
+| dept_name | emp_name |
+|---|---|
+| HR | Karthik |
+| HR | Ajay |
+| IT | Vijay |
+| IT | Vinay |
+| Finance | Meena |
+| Marketing | Veer |
+| Sales | Keerthi |
+| Sales | Priya |
+| Admin | NULL |
+
+---
+
+# QUESTION 12
+
+| emp_name | phone_number | email |
+|---|---|---|
+| Karthik | 9876543210 | karthik@gmail.com |
+| Ajay | 9123456780 | ajay@gmail.com |
+| Vijay | 9988776655 | vijay@gmail.com |
+| Vinay | NULL | NULL |
+| Meena | 9011223344 | meena@gmail.com |
+| Veer | NULL | NULL |
+| Keerthi | 9345678910 | keerthi@gmail.com |
+| Priya | NULL | NULL |
+
+---
+
+# QUESTION 13
+
+| emp_name | dept_name |
+|---|---|
+| Karthik | HR |
+| Ajay | HR |
+| Vijay | IT |
+| Vinay | IT |
+| Meena | Finance |
+| Veer | Marketing |
+| Keerthi | Sales |
+| Priya | Sales |
+| Arun | NULL |
+| NULL | Admin |
+
+---
+
+# QUESTION 14
+
+| emp_name | project_name |
+|---|---|
+| Veer | NULL |
+| Keerthi | NULL |
+| Priya | NULL |
+
+---
+
+# QUESTION 15
+
+| emp_name | project_name |
+|---|---|
+| Karthik | Project A |
+| Ajay | Project B |
+| Vijay | Project C |
+| Vinay | Project D |
+| Meena | Project E |
+| Veer | NULL |
+| Keerthi | NULL |
+| Priya | NULL |
+
+---
+
+# QUESTION 16
+
+| project_name | emp_name |
+|---|---|
+| Project A | Karthik |
+| Project B | Ajay |
+| Project C | Vijay |
+| Project D | Vinay |
+| Project E | Meena |
+| Project F | NULL |
+
+---
+
+# QUESTION 17
+
+| employee_name | manager_name | project_name |
+|---|---|---|
+| Ajay | Karthik | Project B |
+| Vijay | Karthik | Project C |
+| Vinay | Ajay | Project D |
+| Meena | Vijay | Project E |
+
+---
+
+# QUESTION 18
+
+| emp_name | dept_name |
+|---|---|
+| Karthik | HR |
+| Ajay | HR |
+| Vijay | IT |
+| Vinay | IT |
+| Meena | Finance |
+| Veer | Marketing |
+| Keerthi | Sales |
+| Priya | Sales |
+
+---
+
+# QUESTION 19
+
+| emp_name | dept_name |
+|---|---|
+| Karthik | HR |
+| Karthik | IT |
+
+---
+
+# QUESTION 20
+
+| dept_name | emp_name |
+|---|---|
+| HR | Karthik |
+| HR | Ajay |
+| IT | Vijay |
+| IT | Vinay |
+| Finance | Meena |
+| Marketing | Veer |
+| Sales | Keerthi |
+| Sales | Priya |
+| Admin | NULL |
+
+---
+
+# QUESTION 21
+
+| emp_name | project_name |
+|---|---|
+| Arun | Project X |
+| David | Project Y |
+
+---
+
+# QUESTION 22
+
+| dept_name | total_employees |
+|---|---|
+| HR | 2 |
+| IT | 2 |
+| Finance | 1 |
+| Marketing | 1 |
+| Sales | 2 |
+| Admin | 0 |
+
+---
+
+# QUESTION 23
+
+| employee_name | manager_name |
+|---|---|
+| Ajay | Karthik |
+| Vijay | Karthik |
+| Vinay | Ajay |
+| Meena | Vijay |
+| Keerthi | Vinay |
+| Priya | Vinay |
+
+---
+
+# QUESTION 24
+
+| employee_name | manager_name |
+|---|---|
+| Karthik | NULL |
+| Ajay | Karthik |
+| Vijay | Karthik |
+| Vinay | Ajay |
+| Meena | Vijay |
+| Veer | NULL |
+| Keerthi | Vinay |
+| Priya | Vinay |
+
+---
+
+# QUESTION 25
+
+| dept_name | employee_count |
+|---|---|
+| HR | 2 |
+| IT | 2 |
+| Finance | 1 |
+| Marketing | 1 |
+| Sales | 2 |
+| Admin | 0 |
+
+---
+
+# QUESTION 26
+
+| emp_name | dept_name |
+|---|---|
+| Karthik | HR |
+| Ajay | HR |
+| Vijay | IT |
+| Vinay | IT |
+| Meena | Finance |
+| Veer | Marketing |
+| Keerthi | Sales |
+| Priya | Sales |
+| Arun | NULL |
+| NULL | Admin |
+
+---
+
+# QUESTION 27
+
+| emp_name |
+|---|
+| Veer |
+| Keerthi |
+| Priya |
+
+---
+
+# QUESTION 28
+
+| emp_name | project_name |
+|---|---|
+| Karthik | Project A |
+| Ajay | Project B |
+| Vijay | Project C |
+| Vinay | Project D |
+| Meena | Project E |
+| Veer | NULL |
+| Keerthi | NULL |
+| Priya | NULL |
+
+---
+
+# QUESTION 29
+
+| emp_name | dept_name | project_name |
+|---|---|---|
+| Karthik | HR | Project A |
+| Ajay | HR | Project B |
+| Vijay | IT | Project C |
+| Vinay | IT | Project D |
+| Meena | Finance | Project E |
+| Veer | Marketing | NULL |
+| Keerthi | Sales | NULL |
+| Priya | Sales | NULL |
+| Arun | NULL | NULL |
+
+---
+
+# QUESTION 30
+
+| emp_name | dept_name |
+|---|---|
+| Karthik | HR |
+| Ajay | HR |
+| Vijay | IT |
+| Vinay | IT |
+| Meena | Finance |
+| Veer | Marketing |
+| Keerthi | Sales |
+| Priya | Sales |
+| Arun | NULL |
