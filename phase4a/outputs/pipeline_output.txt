@@ -1,0 +1,58 @@
+=== 1. Conditional Logic Segmentation ===
+ customer_id customer_name  total_spend segment
+           1         Alice      12000.0    Gold
+           2           Bob       6000.0  Silver
+           3       Charlie       2000.0  Bronze
+           4         David      15000.0    Gold
+           5           Eve       8000.0  Silver
+           6         Frank       1000.0  Bronze
+           7         Grace       4500.0  Bronze
+           8          Hank       9500.0  Silver
+           9           Ivy      10500.0    Gold
+          10          Jack       3000.0  Bronze
+
+=== 2. Segment Counts ===
+segment  customer_count
+ Bronze               4
+   Gold               3
+ Silver               3
+
+=== 3a. MLlib Bucketizer (Simulation) ===
+ customer_id customer_name  total_spend bucket
+           1         Alice      12000.0    2.0
+           2           Bob       6000.0    1.0
+           3       Charlie       2000.0    0.0
+           4         David      15000.0    2.0
+           5           Eve       8000.0    1.0
+           6         Frank       1000.0    0.0
+           7         Grace       4500.0    0.0
+           8          Hank       9500.0    1.0
+           9           Ivy      10500.0    2.0
+          10          Jack       3000.0    0.0
+
+Calculated Quantiles: [4455.0, 9410.0]
+=== 3b. Quantile-based Segmentation ===
+ customer_id customer_name  total_spend quantile_segment
+           1         Alice      12000.0             High
+           2           Bob       6000.0           Medium
+           3       Charlie       2000.0              Low
+           4         David      15000.0             High
+           5           Eve       8000.0           Medium
+           6         Frank       1000.0              Low
+           7         Grace       4500.0           Medium
+           8          Hank       9500.0             High
+           9           Ivy      10500.0             High
+          10          Jack       3000.0              Low
+
+=== 4. Window-based Ranking ===
+ customer_id customer_name  total_spend  rank_pct
+           6         Frank       1000.0  0.000000
+           3       Charlie       2000.0  0.111111
+          10          Jack       3000.0  0.222222
+           7         Grace       4500.0  0.333333
+           2           Bob       6000.0  0.444444
+           5           Eve       8000.0  0.555556
+           8          Hank       9500.0  0.666667
+           9           Ivy      10500.0  0.777778
+           1         Alice      12000.0  0.888889
+           4         David      15000.0  1.000000
