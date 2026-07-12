@@ -1,0 +1,7 @@
+customer_name,city,total_spend,order_count,segment
+David,Miami,15000.0,1,Gold
+Alice,New York,12000.0,1,Gold
+Eve,Seattle,8000.0,1,Silver
+Bob,Los Angeles,6000.0,1,Silver
+Frank,Boston,3000.0,2,Bronze
+Charlie,Chicago,2000.0,1,Bronze

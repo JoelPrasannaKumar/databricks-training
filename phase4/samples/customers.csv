@@ -1,0 +1,9 @@
+customer_id,customer_name,city
+1,Alice,New York
+2,Bob,Los Angeles
+3,Charlie,Chicago
+4,David,Miami
+5,Eve,Seattle
+6,Frank,Boston
+,NullUser,Nowhere
+1,Alice,New York
